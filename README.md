@@ -106,6 +106,7 @@ When clicking a category in category list, there is a color replacement animatio
 <figure class="half">
   <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark.png" width="300">
   <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark%202.png" width="300">
+  <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 ### Bill detail
