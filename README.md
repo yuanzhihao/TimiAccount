@@ -64,3 +64,20 @@ Default categories are stored in plist file. When application is launched, it ch
 ### Home Page
 
 #### Header
+There are some UI components that show statistic data. The pie chart around plus button is painted with UIBezierPath and CAShapeLayer. The code about painting pie chart is placed in TMPieView.swift. It can be reused in other modules.
+
+#### Timeline
+All income and expenditure are displayed in a table view. The income and expenditure are displayed in different cells that have different style. (TMTimeLineIncomeCell, TMTimeLineCostCell)
+
+To avoid data misplacement when scrolling table view, I overwrite function prepareForReuse and set all attributes to nil.
+
+To make timeline cross all income and expenditure, I implement protocal UIScrollViewDelegate and reset timeline's frame when I scroll table view.
+
+I create a timeline menu view to show menu when user clicks the category image of a income or expenditure. I don't implement the menu in cell (add button in cell), because performance would be bad. To avoid bad performance, I create one time line menu and hide it. When user clicks the category image of a income or expenditure, I move the menu view to clicked category image and show it.
+
+### Add Bill
+
+#### Header
+When clicking a category in category list, there is a color replacement animation in header. First, I extract the color of category image. Then I use CABasicAnimation, UIBezierPath and CAShapeLayer to replace the color of header slowly.
+
+
