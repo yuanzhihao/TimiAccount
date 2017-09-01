@@ -81,7 +81,7 @@ class TMDataManager {
         if bookID.isEmpty {
             return nil
         }
-        return try! Realm().objects(TMBill.self).filter("book.bookID = %@ AND isIncome = %li", bookID, paymentType)
+        return try! Realm().objects(TMBill.self).filter("book.bookID = %@ AND isIncome = %li", bookID, paymentType.rawValue)
     }
     
     func gainAllBills(bookID: String, date: String, categoryTitle: String) -> Results<TMBill>? {
@@ -115,10 +115,10 @@ class TMDataManager {
         }
         else {
             if date == "ALL" {
-                predicate = NSPredicate(format: "book.bookID = %@ AND isIncome = %li", argumentArray: [bookID, paymentType])
+                predicate = NSPredicate(format: "book.bookID = %@ AND isIncome = %li", argumentArray: [bookID, paymentType.rawValue])
             }
             else {
-                predicate = NSPredicate(format: "book.bookID = %@ AND date BEGINSWITH %@ AND isIncome = %li", argumentArray: [bookID, date.substring(to: date.index(date.startIndex, offsetBy: 7)), paymentType])
+                predicate = NSPredicate(format: "book.bookID = %@ AND date BEGINSWITH %@ AND isIncome = %li", argumentArray: [bookID, date.substring(to: date.index(date.startIndex, offsetBy: 7)), paymentType.rawValue])
             }
         }
         return try! Realm().objects(TMBill.self).filter(predicate!)
@@ -186,7 +186,11 @@ class TMDataManager {
         for title in titles {
             let bill = TMBill()
             bill.count = self.countOfBills(bookID: bookID, categoryTitle: title, date: date)
+            bill.money.value = query(bookID: bookID, category: title, date: date)
             
+            bill.category?.categoryImageFileName = self.gainCategoryImageFileName(title: title)
+            bill.category?.percent = calculatePercent(bookID: bookID, date: date, category: title, paymentType: paymentType)
+            bill.category?.categoryTitle = title
             dic.updateValue(bill, forKey: title)
         }
         return dic
@@ -223,11 +227,11 @@ class TMDataManager {
     }
     
     func countOfCategories(paymentType: PaymentType) -> Int {
-        return try! Realm().objects(TMCategory.self).filter("isIncome = %i", paymentType).count
+        return try! Realm().objects(TMCategory.self).filter("isIncome = %i", paymentType.rawValue).count
     }
     
     func gainAllCategories(paymentType: PaymentType) -> Results<TMCategory> {
-        return try! Realm().objects(TMCategory.self).filter("isIncome = %i", paymentType)
+        return try! Realm().objects(TMCategory.self).filter("isIncome = %i", paymentType.rawValue)
     }
     
     func addCategory(category: TMCategory) {
@@ -256,11 +260,11 @@ class TMDataManager {
         if paymentType == PaymentType.all {
             return try! Realm().objects(TMAddedCategory.self).count
         }
-        return try! Realm().objects(TMAddedCategory.self).filter("isIncome = %i", paymentType).count
+        return try! Realm().objects(TMAddedCategory.self).filter("isIncome = %i", paymentType.rawValue).count
     }
     
     func gainAddedCategories(paymentType: PaymentType) -> Results<TMAddedCategory> {
-        return try! Realm().objects(TMAddedCategory.self).filter("isIncome = %i", paymentType)
+        return try! Realm().objects(TMAddedCategory.self).filter("isIncome = %i", paymentType.rawValue)
     }
     
     func addAddedCategory(addedCategory: TMAddedCategory) {

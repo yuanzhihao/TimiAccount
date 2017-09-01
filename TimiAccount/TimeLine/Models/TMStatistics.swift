@@ -16,7 +16,7 @@ enum PaymentType: Int {
 }
 
 func query(paymentType: PaymentType) -> Double {
-    let predicate = NSPredicate(format: "isIncome = %i", [paymentType])
+    let predicate = NSPredicate(format: "isIncome = %i", [paymentType.rawValue])
     let results = try! Realm().objects(TMBill.self).filter(predicate)
     let money: Double = results.sum(ofProperty: "money")
     return money
@@ -56,7 +56,7 @@ func queryMonthly(bookID: String, date: String, paymentType: PaymentType) -> Dou
         return 0.0
     }
     let s = date.substring(to: date.index(date.startIndex, offsetBy: 7))
-    let predicate = NSPredicate(format: "books.booksID = %@ AND dateStr contains %@ AND isIncome = %li", bookID, s, paymentType as! CVarArg)
+    let predicate = NSPredicate(format: "books.booksID = %@ AND dateStr contains %@ AND isIncome = %li", bookID, s, paymentType.rawValue)
     let results = try! Realm().objects(TMBill.self).filter(predicate)
     let amount: Double = results.sum(ofProperty: "money")
     return amount

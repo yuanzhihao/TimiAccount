@@ -1,1 +1,3 @@
 github "SnapKit/SnapKit" "3.2.0"
+github "ibireme/YYText" "1.0.7"
+github "patchthecode/JTAppleCalendar" "7.0.6"

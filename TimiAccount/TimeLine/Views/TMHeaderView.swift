@@ -18,7 +18,7 @@ let kCircleWidth = 100
 
 class TMHeaderView: UIView {
     
-    var headerViewDelegate: TMHeaderViewDelegate? = nil
+    weak var headerViewDelegate: TMHeaderViewDelegate? = nil
     
     lazy var backgroundImageView = { () -> UIImageView in
         let imageView = UIImageView(image: (UIImage(named: "background")))

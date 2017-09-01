@@ -24,15 +24,15 @@ let TCategoryIncome = "isIncome"
 
 class TMCategory: Object {
     
-    dynamic var categoryID: String? = nil
+    @objc dynamic var categoryID: String? = nil
     
-    dynamic var categoryImageFileName: String? = nil
+    @objc dynamic var categoryImageFileName: String? = nil
     
-    dynamic var categoryTitle: String? = nil
+    @objc dynamic var categoryTitle: String? = nil
     
     var percent = 0.0
     
-    let isIncome = RealmOptional<Bool>()
+    let isIncome = RealmOptional<Int>()
     
     var categoryImage: UIImage? {
         get {
@@ -54,7 +54,7 @@ class TMCategory: Object {
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
+        super.init(realm: realm, schema: schema)
     }
     
     required init(value: Any, schema: RLMSchema) {

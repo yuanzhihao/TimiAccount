@@ -11,11 +11,11 @@ import RealmSwift
 import UIKit
 
 class TMAddedCategory: Object {
-    dynamic var categoryID: String? = nil
+    @objc dynamic var categoryID: String? = nil
     
-    dynamic var categoryImageFileName: String? = nil
+    @objc dynamic var categoryImageFileName: String? = nil
     
-    let isIncome = RealmOptional<Bool>()
+    let isIncome = RealmOptional<Int>()
     
     var image: UIImage? {
         get {

@@ -23,7 +23,7 @@ let IncomeCell = "incomeCell"
 
 let CostCell = "costCell"
 
-class TMHomePageViewController: TMBaseViewController, UITableViewDelegate, UITableViewDataSource, TMHeaderViewDelegate, TMTimeLineCellDelegate, TMTimeLineMenuViewDelegate, UIViewControllerTransitioningDelegate {
+class TMHomePageViewController: TMBaseViewController, UITableViewDelegate, UITableViewDataSource, TMHeaderViewDelegate, TMTimeLineCellDelegate, TMTimeLineMenuViewDelegate, UIViewControllerTransitioningDelegate, TMAddBillViewControllerDelegate {
     
     lazy var tableView: UITableView = { () -> UITableView in
         var tv = UITableView(frame: CGRect(x: CGFloat(0), y: CGFloat(TMHeaderViewHeight), width: screenSize().width, height: screenSize().height - CGFloat(TMHeaderViewHeight)))
@@ -287,7 +287,7 @@ class TMHomePageViewController: TMBaseViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: TMTimeLineCell? = nil
-        if !self.bills[indexPath.row].empty && self.bills[indexPath.row].isIncome.value! {
+        if !self.bills[indexPath.row].empty && self.bills[indexPath.row].isIncome.value! == PaymentType.income.rawValue {
             cell = tableView.dequeueReusableCell(withIdentifier: IncomeCell) as! TMTimeLineCell?
             if cell == nil {
                 cell = TMTimeLineIncomeCell(style: UITableViewCellStyle.default, reuseIdentifier: IncomeCell)
@@ -310,7 +310,14 @@ class TMHomePageViewController: TMBaseViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let bill = self.bills[indexPath.row]
+        if bill.empty {
+            return
+        }
+        let detailVC = TMDetailTableViewController()
+        detailVC.currentIndex = indexPath.row
         
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func didClickCategoryButton(indexPath: IndexPath) {
@@ -339,7 +346,10 @@ class TMHomePageViewController: TMBaseViewController, UITableViewDelegate, UITab
     }
     
     func didClickCreateButton() {
-        
+        let addBillVC = TMAddBillViewController()
+        addBillVC.addBillDelegate = self
+        let navi = UINavigationController(rootViewController: addBillVC)
+        self.present(navi, animated: true, completion: nil)
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -373,6 +383,15 @@ class TMHomePageViewController: TMBaseViewController, UITableViewDelegate, UITab
             self.didClickCreateButton()
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    func clickDismissButton(viewController: TMAddBillViewController) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     deinit {

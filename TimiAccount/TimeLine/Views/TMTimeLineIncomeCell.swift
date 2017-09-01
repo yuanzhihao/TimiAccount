@@ -35,7 +35,7 @@ class TMTimeLineIncomeCell: TMTimeLineCell {
         
         weakSelf?.contentView.addSubview((weakSelf?.moneyLabel)!)
         weakSelf?.moneyLabel.snp.makeConstraints({ (ConstraintMaker) in
-            ConstraintMaker.trailing.equalTo((weakSelf?.categoryTitleLabel.snp.leading)!).offset(-3)
+            ConstraintMaker.trailing.equalTo((weakSelf?.categoryTitleLabel.snp.leading)!).offset(-7)
             ConstraintMaker.top.equalTo((weakSelf?.categoryTitleLabel)!)
         })
         
@@ -49,7 +49,7 @@ class TMTimeLineIncomeCell: TMTimeLineCell {
         weakSelf?.contentView.addSubview((weakSelf?.remarkImageButton)!)
         weakSelf?.remarkImageButton.snp.makeConstraints({ (ConstraintMaker) in
             ConstraintMaker.size.equalTo(CGSize(width: TMImageWidth, height: TMImageWidth))
-            ConstraintMaker.right.equalTo((weakSelf?.categoryImageButton.snp.left)!).offset(-5)
+            ConstraintMaker.left.equalTo((weakSelf?.categoryImageButton.snp.right)!).offset(5)
             ConstraintMaker.centerY.equalTo((weakSelf?.categoryImageButton)!)
         })
     }

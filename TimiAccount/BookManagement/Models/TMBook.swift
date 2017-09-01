@@ -22,13 +22,13 @@ let TBookImageIndex = "imageIndex"
 
 class TMBook: Object {
     
-    dynamic var bookID: String? = nil
+    @objc dynamic var bookID: String? = nil
     
-    dynamic var bookName: String? = nil
+    @objc dynamic var bookName: String? = nil
     
     let imageIndex = RealmOptional<Int>()
     
-    dynamic var bookImageFileName: String? = nil
+    @objc dynamic var bookImageFileName: String? = nil
     
     var bookImage: UIImage? {
         set(image) {

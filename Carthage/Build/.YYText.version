@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "ed5fa2ebffeca76184489e376d15e3d93f41638859526b20e666ca511959c5eb",
+      "name" : "YYText"
+    }
+  ],
+  "commitish" : "1.0.7",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

@@ -13,5 +13,6 @@
 #import "CCColorCube.h"
 #import "CCLocalMaximum.h"
 #import "Realm/Realm.h"
+#import <YYText/YYText.h>
 
 #endif /* SVProgressHUD_Bridging_Header_h */

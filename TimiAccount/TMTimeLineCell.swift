@@ -20,13 +20,13 @@ let TMRemainingWidth = getBlankWidth() + CGFloat(40)
 
 let TMRemarkFont: CGFloat = 10.0
 
-let TMMoneyFont: CGFloat = 14.0
+let TMMoneyFont: CGFloat = 12.0
 
 let TMImageWidth = 35
 
 let TMTimeViewWidth: CGFloat = 6
 
-let TMTextFont: CGFloat = 12.0
+let TMTextFont: CGFloat = 11.0
 
 class TMTimeLineCell: UITableViewCell {
     
@@ -36,24 +36,29 @@ class TMTimeLineCell: UITableViewCell {
                 return
             }
             self.timeLabel.text = bill!.date
-            self.moneyLabel.text = String(format: "%.2f", arguments: [bill!.money.value!])
-//            self.moneyLabel.text = String(format: "%.2f", arguments: [queryCostDaily(bookID: bill!.book!.bookID!, date: bill!.date!)])
+//            self.totalMoneyLabel.text = String(format: "$ %.2f", arguments: [queryCostDaily(bookID: bill!.book!.bookID!, date: bill!.date!)])
             self.setRemarkIconVisibility(hidden: true)
             self.remarkImageButton.setImage(nil, for: UIControlState.normal)
             if bill!.category!.categoryImage != nil {
                 self.categoryImageButton.setImage(bill!.category!.categoryImage!, for: UIControlState.normal)
             }
-            //let image = UIImage(data: bill!.remarkIcon!)
+            var image: UIImage? = nil
+            if bill!.remarkIcon != nil {
+                image = UIImage(data: bill!.remarkIcon!)
+            }
             if self.bill!.empty {
                 self.categoryImageButton.setImage(nil, for: UIControlState.normal)
                 self.setRemarkIconVisibility(hidden: true)
                 return
             }
             
-            self.moneyLabel.text = String(format: "%.2f", arguments: [bill!.money.value!])
+            self.moneyLabel.text = String(format: "$ %.2f", self.bill!.money.value!)
             self.categoryTitleLabel.text = bill!.category!.categoryTitle
             self.remarkLabel.text = bill!.remark
-            //self.remarkImageButton.setImage(image, for: UIControlState.normal)
+            if image != nil {
+                self.remarkImageButton.setImage(image, for: UIControlState.normal)
+                self.setRemarkIconVisibility(hidden: false)
+            }
             
             self.bill!.same ? self.setUIControlVisibility(hidden: true) : self.setUIControlVisibility(hidden: false)
         }
@@ -235,7 +240,6 @@ class TMTimeLineCell: UITableViewCell {
     func setUIControlVisibility(hidden: Bool) {
         self.timeLabel.isHidden = hidden
         self.timeView.isHidden = hidden
-        self.moneyLabel.isHidden = hidden
     }
     
     override func prepareForReuse() {
@@ -245,6 +249,7 @@ class TMTimeLineCell: UITableViewCell {
         self.categoryTitleLabel.text = nil
         self.moneyLabel.text = nil
         self.remarkLabel.text = nil
+        self.isLastBill = false
         self.isLastBill = false
     }
     

@@ -10,6 +10,9 @@
 		1C1CAF051F09A70B003702AD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1CAF011F09A6C2003702AD /* SnapKit.framework */; };
 		1C1CAF061F09A70B003702AD /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1CAF011F09A6C2003702AD /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C1CAF081F09A768003702AD /* TMPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1CAF071F09A768003702AD /* TMPieView.swift */; };
+		1C1D4B461F57609C008970FD /* TMRemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D4B451F57609C008970FD /* TMRemarkViewController.swift */; };
+		1C25B29B1F53DAFB0069583D /* YYText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C25B29A1F53DAFB0069583D /* YYText.framework */; };
+		1C25B29C1F53DAFB0069583D /* YYText.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C25B29A1F53DAFB0069583D /* YYText.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C4655091F314ECF00017267 /* TMTimeLineMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4655081F314ECF00017267 /* TMTimeLineMenuView.swift */; };
 		1C46550E1F3A824E00017267 /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C46550B1F3A824E00017267 /* CCColorCube.m */; };
 		1C46550F1F3A824E00017267 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C46550D1F3A824E00017267 /* CCLocalMaximum.m */; };
@@ -31,18 +34,29 @@
 		1C552B3D1F280A14006E6D5B /* TMTimeLineCostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C552B3C1F280A14006E6D5B /* TMTimeLineCostCell.swift */; };
 		1C552B3F1F280B1B006E6D5B /* TMTimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C552B3E1F280B1B006E6D5B /* TMTimeLineCell.swift */; };
 		1C58F6C61F0729D80035C46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58F6C51F0729D80035C46B /* AppDelegate.swift */; };
-		1C58F6C81F0729D80035C46B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58F6C71F0729D80035C46B /* ViewController.swift */; };
-		1C58F6CB1F0729D80035C46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C58F6C91F0729D80035C46B /* Main.storyboard */; };
 		1C58F6CD1F0729D80035C46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C58F6CC1F0729D80035C46B /* Assets.xcassets */; };
 		1C58F6D01F0729D80035C46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C58F6CE1F0729D80035C46B /* LaunchScreen.storyboard */; };
-		1C58F6D81F072A940035C46B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C58F6D71F072A940035C46B /* Realm.framework */; };
-		1C58F6D91F072A940035C46B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C58F6D71F072A940035C46B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C58F6DC1F072AAD0035C46B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C58F6DB1F072AAD0035C46B /* RealmSwift.framework */; };
-		1C58F6DD1F072AAD0035C46B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C58F6DB1F072AAD0035C46B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C58F6E21F072B4D0035C46B /* TMBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58F6E11F072B4D0035C46B /* TMBill.swift */; };
 		1C58F6E41F072FB40035C46B /* TMCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58F6E31F072FB40035C46B /* TMCategory.swift */; };
 		1C58F6E81F073DFD0035C46B /* TMBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58F6E71F073DFD0035C46B /* TMBook.swift */; };
+		1C8457CB1F56BBB6000D635E /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8457CA1F56BBB6000D635E /* JTAppleCalendar.framework */; };
+		1C8457CC1F56BBB6000D635E /* JTAppleCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8457CA1F56BBB6000D635E /* JTAppleCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C84A11E1F099B4C00F29E40 /* TMHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84A11D1F099B4C00F29E40 /* TMHeaderView.swift */; };
+		1CA884BE1F53648100737427 /* TMDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA884BD1F53648100737427 /* TMDetailTableViewController.swift */; };
+		1CA884C01F53711500737427 /* TMDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA884BF1F53711500737427 /* TMDetailTableViewCell.swift */; };
+		1CCE92961F54A89600DB433C /* TMActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE92951F54A89600DB433C /* TMActionSheetView.swift */; };
+		1CCE92981F54ACF800DB433C /* TMAddedCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE92971F54ACF800DB433C /* TMAddedCategoryCollectionViewCell.swift */; };
+		1CCE929A1F54BE7300DB433C /* TMCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE92991F54BE7300DB433C /* TMCalculatorView.swift */; };
+		1CDB18E61F54C4A500E77E9F /* TMCalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDB18E51F54C4A500E77E9F /* TMCalculatorView.xib */; };
+		1CDB18E81F54D3BF00E77E9F /* TMCategoryCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB18E71F54D3BF00E77E9F /* TMCategoryCollectionViewFlowLayout.swift */; };
+		1CDB18EA1F54F2A700E77E9F /* TMCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB18E91F54F2A700E77E9F /* TMCategoryCollectionViewCell.swift */; };
+		1CDB18EC1F54F68F00E77E9F /* TMAddBillHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB18EB1F54F68F00E77E9F /* TMAddBillHeaderView.swift */; };
+		1CDB18EE1F552B2200E77E9F /* TMEditCategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB18ED1F552B2200E77E9F /* TMEditCategoryTitleView.swift */; };
+		1CDB18F01F5535DC00E77E9F /* TMAddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB18EF1F5535DC00E77E9F /* TMAddBillViewController.swift */; };
+		1CE682CA1F567CC0002D719E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE682C91F567CC0002D719E /* Realm.framework */; };
+		1CE682CB1F567CC0002D719E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE682C91F567CC0002D719E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CE682CD1F567CC6002D719E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE682CC1F567CC6002D719E /* RealmSwift.framework */; };
+		1CE682CE1F567CC6002D719E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE682CC1F567CC6002D719E /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,9 +66,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1CE682CB1F567CC0002D719E /* Realm.framework in Embed Frameworks */,
 				1C1CAF061F09A70B003702AD /* SnapKit.framework in Embed Frameworks */,
-				1C58F6DD1F072AAD0035C46B /* RealmSwift.framework in Embed Frameworks */,
-				1C58F6D91F072A940035C46B /* Realm.framework in Embed Frameworks */,
+				1CE682CE1F567CC6002D719E /* RealmSwift.framework in Embed Frameworks */,
+				1C25B29C1F53DAFB0069583D /* YYText.framework in Embed Frameworks */,
+				1C8457CC1F56BBB6000D635E /* JTAppleCalendar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +80,8 @@
 /* Begin PBXFileReference section */
 		1C1CAF011F09A6C2003702AD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		1C1CAF071F09A768003702AD /* TMPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMPieView.swift; path = TimeLine/Views/TMPieView.swift; sourceTree = "<group>"; };
+		1C1D4B451F57609C008970FD /* TMRemarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMRemarkViewController.swift; path = AddBill/Controllers/TMRemarkViewController.swift; sourceTree = "<group>"; };
+		1C25B29A1F53DAFB0069583D /* YYText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYText.framework; path = Carthage/Build/iOS/YYText.framework; sourceTree = "<group>"; };
 		1C4655081F314ECF00017267 /* TMTimeLineMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMTimeLineMenuView.swift; path = TimeLine/Views/TMTimeLineMenuView.swift; sourceTree = "<group>"; };
 		1C46550A1F3A823E00017267 /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCColorCube.h; path = Shared/ColorCube/CCColorCube.h; sourceTree = "<group>"; };
 		1C46550B1F3A824E00017267 /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCColorCube.m; path = Shared/ColorCube/CCColorCube.m; sourceTree = "<group>"; };
@@ -94,17 +112,27 @@
 		1C552B3E1F280B1B006E6D5B /* TMTimeLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTimeLineCell.swift; sourceTree = "<group>"; };
 		1C58F6C21F0729D80035C46B /* TimiAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimiAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C58F6C51F0729D80035C46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C58F6C71F0729D80035C46B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C58F6CA1F0729D80035C46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C58F6CC1F0729D80035C46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C58F6CF1F0729D80035C46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C58F6D11F0729D80035C46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C58F6D71F072A940035C46B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		1C58F6DB1F072AAD0035C46B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		1C58F6E11F072B4D0035C46B /* TMBill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMBill.swift; path = TimeLine/Models/TMBill.swift; sourceTree = "<group>"; };
 		1C58F6E31F072FB40035C46B /* TMCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMCategory.swift; path = TimeLine/Models/TMCategory.swift; sourceTree = "<group>"; };
 		1C58F6E71F073DFD0035C46B /* TMBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMBook.swift; path = BookManagement/Models/TMBook.swift; sourceTree = "<group>"; };
+		1C8457CA1F56BBB6000D635E /* JTAppleCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTAppleCalendar.framework; path = Carthage/Build/iOS/JTAppleCalendar.framework; sourceTree = "<group>"; };
 		1C84A11D1F099B4C00F29E40 /* TMHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMHeaderView.swift; path = TimeLine/Views/TMHeaderView.swift; sourceTree = "<group>"; };
+		1CA884BD1F53648100737427 /* TMDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMDetailTableViewController.swift; path = TimeLine/Controllers/TMDetailTableViewController.swift; sourceTree = "<group>"; };
+		1CA884BF1F53711500737427 /* TMDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMDetailTableViewCell.swift; path = TimeLine/Views/TMDetailTableViewCell.swift; sourceTree = "<group>"; };
+		1CCE92951F54A89600DB433C /* TMActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMActionSheetView.swift; path = AddBill/Views/TMActionSheetView.swift; sourceTree = "<group>"; };
+		1CCE92971F54ACF800DB433C /* TMAddedCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMAddedCategoryCollectionViewCell.swift; path = AddBill/Views/TMAddedCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CCE92991F54BE7300DB433C /* TMCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMCalculatorView.swift; path = AddBill/Views/TMCalculatorView.swift; sourceTree = "<group>"; };
+		1CDB18E51F54C4A500E77E9F /* TMCalculatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TMCalculatorView.xib; path = AddBill/Views/TMCalculatorView.xib; sourceTree = "<group>"; };
+		1CDB18E71F54D3BF00E77E9F /* TMCategoryCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMCategoryCollectionViewFlowLayout.swift; path = AddBill/Views/TMCategoryCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		1CDB18E91F54F2A700E77E9F /* TMCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMCategoryCollectionViewCell.swift; path = AddBill/Views/TMCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CDB18EB1F54F68F00E77E9F /* TMAddBillHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMAddBillHeaderView.swift; path = AddBill/Views/TMAddBillHeaderView.swift; sourceTree = "<group>"; };
+		1CDB18ED1F552B2200E77E9F /* TMEditCategoryTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMEditCategoryTitleView.swift; path = AddBill/Views/TMEditCategoryTitleView.swift; sourceTree = "<group>"; };
+		1CDB18EF1F5535DC00E77E9F /* TMAddBillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMAddBillViewController.swift; sourceTree = "<group>"; };
+		1CE682C91F567CC0002D719E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		1CE682CC1F567CC6002D719E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +140,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE682CA1F567CC0002D719E /* Realm.framework in Frameworks */,
+				1C8457CB1F56BBB6000D635E /* JTAppleCalendar.framework in Frameworks */,
+				1CE682CD1F567CC6002D719E /* RealmSwift.framework in Frameworks */,
+				1C25B29B1F53DAFB0069583D /* YYText.framework in Frameworks */,
 				1C552B351F27E1C7006E6D5B /* QuartzCore.framework in Frameworks */,
 				1C1CAF051F09A70B003702AD /* SnapKit.framework in Frameworks */,
-				1C58F6DC1F072AAD0035C46B /* RealmSwift.framework in Frameworks */,
-				1C58F6D81F072A940035C46B /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +155,11 @@
 		1C1CAF001F09A6C2003702AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C8457CA1F56BBB6000D635E /* JTAppleCalendar.framework */,
+				1CE682CC1F567CC6002D719E /* RealmSwift.framework */,
+				1CE682C91F567CC0002D719E /* Realm.framework */,
+				1C25B29A1F53DAFB0069583D /* YYText.framework */,
 				1C552B341F27E1C7006E6D5B /* QuartzCore.framework */,
-				1C58F6D71F072A940035C46B /* Realm.framework */,
-				1C58F6DB1F072AAD0035C46B /* RealmSwift.framework */,
 				1C552B241F27E071006E6D5B /* SVProgressHUD */,
 				1C1CAF011F09A6C2003702AD /* SnapKit.framework */,
 			);
@@ -178,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				1C552B371F27E6B4006E6D5B /* TMHomePageViewController.swift */,
+				1CA884BD1F53648100737427 /* TMDetailTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -203,11 +236,10 @@
 			isa = PBXGroup;
 			children = (
 				1C552B171F198860006E6D5B /* Shared */,
+				1CCE92911F54A7D500DB433C /* AddBill */,
 				1C58F6E51F073DAE0035C46B /* BookManagement */,
 				1C58F6DF1F072B220035C46B /* TimeLine */,
 				1C58F6C51F0729D80035C46B /* AppDelegate.swift */,
-				1C58F6C71F0729D80035C46B /* ViewController.swift */,
-				1C58F6C91F0729D80035C46B /* Main.storyboard */,
 				1C58F6CC1F0729D80035C46B /* Assets.xcassets */,
 				1C58F6CE1F0729D80035C46B /* LaunchScreen.storyboard */,
 				1C58F6D11F0729D80035C46B /* Info.plist */,
@@ -264,8 +296,50 @@
 				1C552B3A1F2809BB006E6D5B /* TMTimeLineIncomeCell.swift */,
 				1C552B3C1F280A14006E6D5B /* TMTimeLineCostCell.swift */,
 				1C4655081F314ECF00017267 /* TMTimeLineMenuView.swift */,
+				1CA884BF1F53711500737427 /* TMDetailTableViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		1CCE92911F54A7D500DB433C /* AddBill */ = {
+			isa = PBXGroup;
+			children = (
+				1CCE92941F54A7F300DB433C /* Controllers */,
+				1CCE92931F54A7EC00DB433C /* Views */,
+				1CCE92921F54A7E300DB433C /* Models */,
+			);
+			name = AddBill;
+			sourceTree = "<group>";
+		};
+		1CCE92921F54A7E300DB433C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1CCE92931F54A7EC00DB433C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CCE92951F54A89600DB433C /* TMActionSheetView.swift */,
+				1CCE92971F54ACF800DB433C /* TMAddedCategoryCollectionViewCell.swift */,
+				1CCE92991F54BE7300DB433C /* TMCalculatorView.swift */,
+				1CDB18E51F54C4A500E77E9F /* TMCalculatorView.xib */,
+				1CDB18E71F54D3BF00E77E9F /* TMCategoryCollectionViewFlowLayout.swift */,
+				1CDB18E91F54F2A700E77E9F /* TMCategoryCollectionViewCell.swift */,
+				1CDB18EB1F54F68F00E77E9F /* TMAddBillHeaderView.swift */,
+				1CDB18ED1F552B2200E77E9F /* TMEditCategoryTitleView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1CCE92941F54A7F300DB433C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB18EF1F5535DC00E77E9F /* TMAddBillViewController.swift */,
+				1C1D4B451F57609C008970FD /* TMRemarkViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +407,7 @@
 				1C58F6D01F0729D80035C46B /* LaunchScreen.storyboard in Resources */,
 				1C4655131F3BD2E000017267 /* category.plist in Resources */,
 				1C58F6CD1F0729D80035C46B /* Assets.xcassets in Resources */,
-				1C58F6CB1F0729D80035C46B /* Main.storyboard in Resources */,
+				1CDB18E61F54C4A500E77E9F /* TMCalculatorView.xib in Resources */,
 				1C552B311F27E071006E6D5B /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,43 +435,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDB18EC1F54F68F00E77E9F /* TMAddBillHeaderView.swift in Sources */,
+				1C1D4B461F57609C008970FD /* TMRemarkViewController.swift in Sources */,
 				1C552B1F1F200D43006E6D5B /* TMDataManager.swift in Sources */,
 				1C552B3D1F280A14006E6D5B /* TMTimeLineCostCell.swift in Sources */,
 				1C552B2F1F27E071006E6D5B /* SVIndefiniteAnimatedView.m in Sources */,
+				1CDB18EA1F54F2A700E77E9F /* TMCategoryCollectionViewCell.swift in Sources */,
 				1C4655091F314ECF00017267 /* TMTimeLineMenuView.swift in Sources */,
 				1C46550F1F3A824E00017267 /* CCLocalMaximum.m in Sources */,
 				1C46550E1F3A824E00017267 /* CCColorCube.m in Sources */,
 				1C552B3F1F280B1B006E6D5B /* TMTimeLineCell.swift in Sources */,
+				1CCE92981F54ACF800DB433C /* TMAddedCategoryCollectionViewCell.swift in Sources */,
 				1C552B321F27E071006E6D5B /* SVProgressHUD.m in Sources */,
 				1C552B331F27E071006E6D5B /* SVRadialGradientLayer.m in Sources */,
+				1CA884C01F53711500737427 /* TMDetailTableViewCell.swift in Sources */,
+				1CCE929A1F54BE7300DB433C /* TMCalculatorView.swift in Sources */,
 				1C1CAF081F09A768003702AD /* TMPieView.swift in Sources */,
 				1C552B301F27E071006E6D5B /* SVProgressAnimatedView.m in Sources */,
+				1CDB18F01F5535DC00E77E9F /* TMAddBillViewController.swift in Sources */,
 				1C552B1B1F198980006E6D5B /* Share.swift in Sources */,
 				1C552B3B1F2809BB006E6D5B /* TMTimeLineIncomeCell.swift in Sources */,
+				1CA884BE1F53648100737427 /* TMDetailTableViewController.swift in Sources */,
 				1C58F6E81F073DFD0035C46B /* TMBook.swift in Sources */,
 				1C552B381F27E6B4006E6D5B /* TMHomePageViewController.swift in Sources */,
-				1C58F6C81F0729D80035C46B /* ViewController.swift in Sources */,
 				1C58F6E21F072B4D0035C46B /* TMBill.swift in Sources */,
 				1C58F6E41F072FB40035C46B /* TMCategory.swift in Sources */,
 				1C552B211F20116A006E6D5B /* TMAddedCategory.swift in Sources */,
 				1C552B231F27D85C006E6D5B /* TMBaseViewController.swift in Sources */,
+				1CDB18EE1F552B2200E77E9F /* TMEditCategoryTitleView.swift in Sources */,
 				1C552B1D1F1AC5B6006E6D5B /* TMStatistics.swift in Sources */,
+				1CCE92961F54A89600DB433C /* TMActionSheetView.swift in Sources */,
 				1C84A11E1F099B4C00F29E40 /* TMHeaderView.swift in Sources */,
 				1C58F6C61F0729D80035C46B /* AppDelegate.swift in Sources */,
+				1CDB18E81F54D3BF00E77E9F /* TMCategoryCollectionViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C58F6C91F0729D80035C46B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C58F6CA1F0729D80035C46B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C58F6CE1F0729D80035C46B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

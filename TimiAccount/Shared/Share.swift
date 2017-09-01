@@ -69,3 +69,11 @@ func screenSize() -> CGRect {
 func getBlankWidth() -> CGFloat {
     return (screenSize().width - CGFloat(TMTimeLineButtonWidth)) / 4 + (screenSize().width - CGFloat(TMTimeLineButtonWidth)) / 12
 }
+
+func selectedColor() -> UIColor {
+    return UIColor(red: 0.907, green: 0.454, blue: 0.000, alpha: 1.000)
+}
+
+func collectionCellWidth() -> CGFloat {
+    return screenSize().width / 6
+}

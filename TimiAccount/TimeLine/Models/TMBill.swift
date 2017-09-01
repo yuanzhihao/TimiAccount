@@ -31,21 +31,21 @@ let TBillEmpty = "empty"
 
 class TMBill: Object {
     
-    dynamic var billID: String? = nil
+    @objc dynamic var billID: String? = nil
     
-    dynamic var date: String? = nil
+    @objc dynamic var date: String? = nil
     
-    dynamic var remark: String? = nil
+    @objc dynamic var remark: String? = nil
     
-    dynamic var remarkIcon: Data? = nil
+    @objc dynamic var remarkIcon: Data? = nil
     
-    let isIncome = RealmOptional<Bool>()
+    let isIncome = RealmOptional<Int>()
     
     let money = RealmOptional<Double>()
     
-    dynamic var category: TMCategory? = nil
+    @objc dynamic var category: TMCategory? = nil
     
-    dynamic var book: TMBook? = nil
+    @objc dynamic var book: TMBook? = nil
     
     var same = false
     
@@ -84,7 +84,7 @@ class TMBill: Object {
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
+        super.init(realm: realm, schema: schema)
     }
     
     func updateDate(date: String) {
@@ -117,7 +117,7 @@ class TMBill: Object {
         })
     }
     
-    func updateIncome(isIncome: Bool) {
+    func updateIncome(isIncome: Int) {
         if self.isIncome.value! == isIncome {
             return
         }
