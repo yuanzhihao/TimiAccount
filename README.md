@@ -11,10 +11,10 @@ Target platform: iOS 10.0
 
 Name | Explain
 --------- | -------------
-SnapKit | [Autolayout with code](http://snapkit.io/docs/)
+SnapKit | [Auto Layout with code](http://snapkit.io/docs/)
 SVProgressHUD | [HUD](https://github.com/SVProgressHUD/SVProgressHUD)
 ColorCube | [extract color from image](https://github.com/pixelogik/ColorCube)
-Realm | [new loacl database solution](https://realm.io/docs/swift/latest/)
+Realm | [new local database solution](https://realm.io/docs/swift/latest/)
 YYText | [Powerful text framework for iOS to display and edit rich text](https://github.com/ibireme/YYText)
 
 
@@ -59,7 +59,7 @@ Key | Identity | Column | Data Type | Description
   || |categoryImageFileNmae |String? |file name of category icon
  |  ||isIncome |RealmOptional\<Bool\> |is expenditure or income
  
-Default categories are stored in plist file. When application is launched, it checks if table category in datebase is null. If yes, load categories in plist file and save them in datebase.
+Default categories are stored in plist file. When application is launched, it checks if table category in database is null. If yes, load categories in plist file and save them in database.
 
 ### Home Page
 
@@ -79,11 +79,11 @@ All income and expenditure are displayed in a table view. The income and expendi
 
 To avoid data misplacement when scrolling table view, I overwrite function prepareForReuse and set all attributes to nil.
 
-To make timeline cross all income and expenditure, I implement protocal UIScrollViewDelegate and reset timeline's frame when I scroll table view.
+To make timeline cross all income and expenditure, I implement protocol UIScrollViewDelegate and reset timeline's frame when I scroll table view.
 
 <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/timeline%20menu.png" width="300">
 
-I create a timeline menu view to show menu when user clicks the category image of a income or expenditure. I don't implement the menu in cell (add button in cell), because performance would be bad. To avoid bad performance, I create one time line menu and hide it. When user clicks the category image of a income or expenditure, I move the menu view to clicked category image and show it.
+I create a timeline menu view to show menu when user clicks the category image of a income or expenditure. I don't implement the menu in cell (add button in cell), because performance would be bad. To avoid bad performance, I create a time line menu and hide it. When user clicks the category image of an income or expenditure, I move the menu view to clicked category image and show it.
 
 ### Add Bill (update bill)
 
@@ -93,7 +93,7 @@ I create a timeline menu view to show menu when user clicks the category image o
 
 <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/add%20bill%20header.png" width="300">
 
-When clicking a category in category list, there is a color replacement animation in header. First, I extract the color of category image. Then I use CABasicAnimation, UIBezierPath and CAShapeLayer to replace the color of header slowly.
+When clicking a category in category list, there is a color replacement animation in header. First, I extract the color of category image. Then I use CABasicAnimation, UIBezierPath and CAShapeLayer to replace the color of header gradually.
 
 <figure class="third">
   <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%201.png" width="300">
@@ -118,4 +118,4 @@ User inputs remark and chooses remark photo.
 
 <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/detail%201.png" width="300">
 
-User checks the detail of a specifc bill. User can scroll up or down to check other bill.
+User checks the detail of a specific bill. User can scroll up or down to check another bill.
