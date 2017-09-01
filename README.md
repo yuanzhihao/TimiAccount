@@ -85,7 +85,7 @@ To make timeline cross all income and expenditure, I implement protocal UIScroll
 
 I create a timeline menu view to show menu when user clicks the category image of a income or expenditure. I don't implement the menu in cell (add button in cell), because performance would be bad. To avoid bad performance, I create one time line menu and hide it. When user clicks the category image of a income or expenditure, I move the menu view to clicked category image and show it.
 
-### Add Bill
+### Add Bill (update bill)
 
 ![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/add%20bill%20cost.png)
 
