@@ -62,22 +62,36 @@ Key | Identity | Column | Data Type | Description
 Default categories are stored in plist file. When application is launched, it checks if table category in datebase is null. If yes, load categories in plist file and save them in datebase.
 
 ### Home Page
-
+![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/home%20page.png)
 #### Header
+![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/header%20view.png)
 There are some UI components that show statistic data. The pie chart around plus button is painted with UIBezierPath and CAShapeLayer. The code about painting pie chart is placed in TMPieView.swift. It can be reused in other modules.
 
 #### Timeline
+![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/table%20view.png)
 All income and expenditure are displayed in a table view. The income and expenditure are displayed in different cells that have different style. (TMTimeLineIncomeCell, TMTimeLineCostCell)
 
 To avoid data misplacement when scrolling table view, I overwrite function prepareForReuse and set all attributes to nil.
 
 To make timeline cross all income and expenditure, I implement protocal UIScrollViewDelegate and reset timeline's frame when I scroll table view.
-
+![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/timeline%20menu.png)
 I create a timeline menu view to show menu when user clicks the category image of a income or expenditure. I don't implement the menu in cell (add button in cell), because performance would be bad. To avoid bad performance, I create one time line menu and hide it. When user clicks the category image of a income or expenditure, I move the menu view to clicked category image and show it.
 
 ### Add Bill
-
+![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/add%20bill%20cost.png)
 #### Header
+![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/add%20bill%20header.png)
 When clicking a category in category list, there is a color replacement animation in header. First, I extract the color of category image. Then I use CABasicAnimation, UIBezierPath and CAShapeLayer to replace the color of header slowly.
+<figure class="half">
+    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%201.png">
+    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%202.png">
+    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/income%20category.png">
+</figure>
+![](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/choose%20date.png)
+<figure class="two">
+    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark.png">
+    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark%202.png">
+</figure>
 
-
+### Bill detail
+![](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/detail%201.png)
