@@ -63,7 +63,7 @@ Default categories are stored in plist file. When application is launched, it ch
 
 ### Home Page
 
-![image](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/home%20page.png)
+<img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/home%20page.png" width="300">
 
 #### Header
 
