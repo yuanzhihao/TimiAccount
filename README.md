@@ -61,4 +61,6 @@ Key | Identity | Column | Data Type | Description
  
 Default categories are stored in plist file. When application is launched, it checks if table category in datebase is null. If yes, load categories in plist file and save them in datebase.
 
-### Timeline
+### Home Page
+
+#### Header
