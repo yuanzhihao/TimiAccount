@@ -5,6 +5,8 @@ Development language: Swift
 
 Tools: XCode 8.3.3
 
+Target platform: iOS 10.0
+
 ### Third-party library used
 
 Name | Explain
@@ -13,6 +15,8 @@ SnapKit | [Autolayout with code](http://snapkit.io/docs/)
 SVProgressHUD | [HUD](https://github.com/SVProgressHUD/SVProgressHUD)
 ColorCube | [extract color from image](https://github.com/pixelogik/ColorCube)
 Realm | [new loacl database solution](https://realm.io/docs/swift/latest/)
+YYText | [Powerful text framework for iOS to display and edit rich text](https://github.com/ibireme/YYText)
+
 
 ### Database design
 
