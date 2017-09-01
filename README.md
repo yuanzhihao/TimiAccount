@@ -96,16 +96,16 @@ I create a timeline menu view to show menu when user clicks the category image o
 When clicking a category in category list, there is a color replacement animation in header. First, I extract the color of category image. Then I use CABasicAnimation, UIBezierPath and CAShapeLayer to replace the color of header slowly.
 
 <figure class="third">
-    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%201.png" width="300">
-    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%202.png" width="300">
-    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/income%20category.png" width="300">
+  <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%201.png" width="300">
+  <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/cost%20category%202.png" width="300">
+  <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/income%20category.png" width="300">
 </figure>
 
 ![](https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/choose%20date.png)
 
 <figure class="half">
-    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark.png" width="300">
-    <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark%202.png" width="300">
+  <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark.png" width="300">
+  <img src="https://github.com/yuanzhihao/TimiAccount/raw/master/screen-shot-timi/remark%202.png" width="300">
 </figure>
 
 ### Bill detail
